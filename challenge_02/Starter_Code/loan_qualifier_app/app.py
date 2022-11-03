@@ -109,10 +109,21 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-   # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
-    bank_data_filtered.to_csv("saved_qualifying_loans.csv")
+    answer = questionary.text("would you like to save your qualifying loans?").ask()
+    message = "do not save qualifying loans."
 
+    if answer == 'yes':
+        message = "Yes, saving qualifying loans."
+
+    
+   # @TODO: Complete the usability dialog for savings the CSV Files.
+
+        bank_data = load_bank_data()
+        credit_score, debt, income, loan_amount, home_value = get_applicant_info() 
+        qualifying_loans = find_qualifying_loans(bank_data, credit_score, debt, income, loan_amount, home_value)
+        qualifying_loans.to_csv("saved_qualifying_loans.csv")
+
+        print(message)
     
 
 #def save_csv(xyz): df.to_csv("filename.csv")
@@ -139,4 +150,4 @@ def run():
 
 
 if __name__ == "__main__":
-    fire.Fire(run)
+    fire.Fire(run) 
