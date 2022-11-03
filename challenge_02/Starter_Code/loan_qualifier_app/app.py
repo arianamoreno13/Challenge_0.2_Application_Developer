@@ -7,9 +7,10 @@ Example:
     $ python app.py
 """
 import sys
-import fire
+import fire 
 import questionary
 from pathlib import Path
+import pandas as pd
 
 from qualifier.utils.fileio import load_csv
 
@@ -108,9 +109,16 @@ def save_qualifying_loans(qualifying_loans):
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
     """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
+   # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    bank_data_filtered.to_csv("saved_qualifying_loans.csv")
 
+    
+
+#def save_csv(xyz): df.to_csv("filename.csv")
+#bank_data_filtered.to_csv('saved_qualifying_loans.csv"
+ 
+### still confused if this is saving the info or just reading it##
 
 def run():
     """The main function for running the script."""
