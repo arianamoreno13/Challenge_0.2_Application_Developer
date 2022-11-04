@@ -1,33 +1,51 @@
 # Project Title
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
 
----
+--- This is a python loan qualifier app. This app allows us to ask our users a list of loan application questions. Once we have all of their imputted data we can determine thier eligibility. Using our 'daily_rate_sheet' we can output good loan fits for the client. 
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+---This project uses python 3.7 with the following packages:
+ 
+* [fire](https://github.com/google/python-fire) - For the command line interface (CLI), Helps debug, and welcome page.
+ 
+* [questionary](https://github.com/tmbo/questionary) - For having interactive promts and dialog with the app. 
 
----
+* [sys](phdler.py) - For manipulating different parts of the Python Runtime Environment.
+
+* [pathlib](docs/training_resources/python/handling-file-paths.md) - For interacting with file systems easier. 
+
+* [pandas](Data analysis in Python with pandas/toc.txt) - For data analysis and manipulation. 
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
 
----
+---Before running the application first install the following dependencies.
 
-## Usage
+```python
+  pip install os-sys
+  pip install fire
+  pip install questionary
+  pip install pathlib
+  pip install pandas
+  
+
+## Usage 
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
+To use our Loan qualifier app you need to clone the repository; run the **app.py** with python.
 
----
+---python app.py
 
-## Contributors
+Once you launch the loan qualifier app you will recieve the following prompt. 
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
 
----
+## Contributors 
+
+---brought to you by ~ Ariana Moreno
+
+---Linkedin-[www.linkedin.com/in/ariana-undefined-891093256]
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT
