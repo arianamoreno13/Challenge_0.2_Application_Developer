@@ -32,13 +32,11 @@
 
 ## Usage 
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
-To use our Loan qualifier app you need to clone the repository; run the **app.py** with python.
-
 ---python app.py
 
 Once you launch the loan qualifier app you will recieve the following prompt. 
 
+[Loan Qualifier Prompts](Images/Screenshot_loan_qualifier.jpg)
 
 ## Contributors 
 
