@@ -11,7 +11,7 @@
  
 * [questionary](https://github.com/tmbo/questionary) - For having interactive promts and dialog with the app. 
 
-* [sys](phdler.py) - For manipulating different parts of the Python Runtime Environment.
+* [sys] - For manipulating different parts of the Python Runtime Environment.
 
 * [pathlib](docs/training_resources/python/handling-file-paths.md) - For interacting with file systems easier. 
 
